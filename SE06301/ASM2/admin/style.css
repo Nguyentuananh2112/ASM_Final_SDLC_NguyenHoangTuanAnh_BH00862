@@ -1,0 +1,208 @@
+/* Reset các thuộc tính cơ bản để đảm bảo sự đồng nhất trên các trình duyệt */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Đặt font chữ cho toàn bộ trang */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f8fc;
+    color: #4a4a4a;
+    padding: 30px 20px;
+    line-height: 1.6;
+}
+
+/* Container cho form tìm kiếm và bảng sản phẩm */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Tiêu đề của trang */
+h1 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form tìm kiếm */
+.form-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.form-search input[type="text"] {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 16px;
+    width: 60%;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-search input[type="text"]:focus {
+    border-color: #4CAF50;
+}
+
+.form-search button {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-search button:hover {
+    background-color: #45a049;
+}
+
+/* Bảng hiển thị kết quả tìm kiếm */
+.table-responsive {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f1f1f1;
+    font-weight: 600;
+    color: #333;
+}
+
+td {
+    background-color: #fff;
+    font-size: 16px;
+    color: #555;
+}
+
+td a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Nút cập nhật sản phẩm */
+.update-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.update-btn:hover {
+    background-color: #45a049;
+}
+
+/* Hover cho dòng trong bảng */
+tr:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+/* Style cho form cập nhật */
+.form-update {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-update h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.form-update input[type="text"], 
+.form-update input[type="number"], 
+.form-update textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+.form-update textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.form-update input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-update input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+
+/* CSS cho nút quay về trang chủ */
+.back-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-back {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #0056b3;
+}
+
+
