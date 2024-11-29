@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 28, 2024 at 08:37 AM
+-- Generation Time: Nov 29, 2024 at 12:51 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -107,7 +107,8 @@ INSERT INTO `categories` (`id`, `name`, `slug`, `status`, `created_at`, `updated
 (6, 'Jeans ', 'jeans-', 'Active', NULL, NULL),
 (7, 'Dress', 'dress', 'Active', NULL, NULL),
 (8, 'Suit', 'suit', 'Active', NULL, NULL),
-(9, 'Skirt', 'skirt', 'Active', NULL, NULL);
+(9, 'Skirt', 'skirt', 'Active', NULL, NULL),
+(10, 'Sort', 'sort', 'Active', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -247,7 +248,11 @@ INSERT INTO `products` (`id`, `name`, `slug`, `description`, `summary`, `stock`,
 (2, 'Wool gingham jacket with Interlocking G', 'wool-gingham-jacket-with-interlocking-g', 'Beige and blue wool gingham\r\nBlack braided trim\r\nGold-toned anchor buttons\r\nInterlocking G embroidered patch\r\nUnlined\r\nCollarless\r\nDropped shoulder\r\nLong sleeves\r\nThree patch pockets\r\nFused construction\r\nButton closure\r\nLength: 73cm, based on a size 48 (IT)\r\nMade in Italy\r\nThe product shown in this image is a size 48 (IT)\r\nFabric: 99% Wool, 1% Silk.\r\nTrimming: 90% Acrylic, 10% Acetate.\r\nSleeve lining: 100% Cupro.\r\nPocket lining: 100% Cotton.\r\nApplication: 100% Polyester.', '', 20, 1500000, 1400000, 'uploads/67445c3cd5e33gucci.avif', 1, 2, 'Active', NULL, NULL),
 (3, 'Short Jacket In Diamond-Embossed Tweed', 'short-jacket-in-diamond-embossed-tweed', 'Silk lining\r\nOne-button closure\r\nDecorative buttons sewn on the front\r\nfour patch pockets with buttons on chest and front\r\nround-neck collar\r\nfour-buttons cuffs\r\nlightly padded shoulders\r\n\r\n100% Wool\r\nSTYLE ID 680280Y7D281000\r\nMade in Italy', '', 123, 11000000, 10000000, 'uploads/67446a2403406YSL.avif', 1, 3, 'Active', NULL, NULL),
 (4, 'Cashmere Sweater With Web', 'cashmere-sweater-with-web', 'Black plain cashmere knit\r\nCrewneck\r\nDropped shoulder\r\nWeb stripe detail\r\nRib trim\r\nShoulder drop: 43cm; based on a size small\r\nChest: 49cm; based on a size small\r\nSleeves length: 64cm; based on a size small\r\nRegular fit\r\nLength: 64.5cm; based on a size small\r\nMade in Italy\r\nThe model is 188 cm and is wearing size small\r\nFabric: 100% Cashmere.\r\nTrimming: 94% Cashmere, 5% Polyamide, 1% Elastane.\r\nDetails: 100% Wool.', '', 99, 11000000, 10000000, 'uploads/67446b07033f4gucciSweater.avif', 4, 2, 'Active', NULL, NULL),
-(5, 'Macrocannage Jacket', 'macrocannage-jacket', 'Front button closure\r\nCD signature horn buttons\r\n64% cotton, 27% polyester, 7% acrylic, 2% polyamide\r\nMade in Italy', '', 99, 81000000, 81000000, 'uploads/67446cb569d1dDiorJacket.jpg', 1, 5, 'Active', NULL, NULL);
+(5, 'Macrocannage Jacket', 'macrocannage-jacket', 'Front button closure\r\nCD signature horn buttons\r\n64% cotton, 27% polyester, 7% acrylic, 2% polyamide\r\nMade in Italy', '', 99, 81000000, 81000000, 'uploads/67446cb569d1dDiorJacket.jpg', 1, 5, 'Active', NULL, NULL),
+(8, 'D-Ring Trompe L’Oeil Sweater Dress', 'd-ring-trompe-l-oeil-sweater-dress', 'abv', '', 50, 10000000, 10000000, 'uploads/6748363c0d1e8dressLV.avif', 7, 1, 'Active', NULL, NULL),
+(9, 'Monogram Zipper Accent Sweater', 'monogram-zipper-accent-sweater', 'abv', '', 50, 5000000, 5000000, 'uploads/674836e931877Monogram Zipper Accent SweaterLV.avif', 4, 1, 'Active', NULL, NULL),
+(10, 'Embossed Monogram High Neck Sweater ', 'embossed-monogram-high-neck-sweater-', 'accv', '', 20, 11000000, 10000000, 'uploads/6748372e30082Embossed Monogram High Neck Sweater LV.avif', 4, 1, 'Active', NULL, NULL),
+(11, 'Monogram Pocket T-Shirt', 'monogram-pocket-t-shirt', 'aaavv', '', 100, 1000000, 1000000, 'uploads/67483839add5cMonogram Pocket T-Shirt.avif', 2, 1, 'Active', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -397,13 +402,13 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `brands`
 --
 ALTER TABLE `brands`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -439,7 +444,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `reviews`
